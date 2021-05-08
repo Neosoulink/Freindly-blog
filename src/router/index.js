@@ -8,15 +8,22 @@ import {
 // SCREENS
 import AboutView from "../views/About";
 import HomeView from "../views/Home";
+import NotFoundView from "../views/NotFound";
 
 const routes = [
 	{
 		path: "/",
-		component: HomeView
+		component: HomeView,
+		exact: true
 	},
 	{
 		path: "/about",
-		component: AboutView
+		component: AboutView,
+		exact: true
+	},
+	{
+		path: "*",
+		component: NotFoundView
 	}
 ];
 
