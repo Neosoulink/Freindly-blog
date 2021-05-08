@@ -6,22 +6,17 @@ import {
 } from "react-router-dom";
 
 // SCREENS
-function Home() {
-	return <h2>Home Home</h2>;
-}
-
-function About() {
-	return <h2>About</h2>;
-}
+import AboutView from "../views/About";
+import HomeView from "../views/Home";
 
 const routes = [
 	{
 		path: "/",
-		component: Home
+		component: HomeView
 	},
 	{
 		path: "/about",
-		component: About
+		component: AboutView
 	}
 ];
 
