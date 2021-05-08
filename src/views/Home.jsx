@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../components/Header';
 
 // COMPONENTS
+import Header from '../components/Header';
 
 export default function HomeView() {
 	return (
