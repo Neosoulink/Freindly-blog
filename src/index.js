@@ -5,16 +5,20 @@ import { Provider } from 'react-redux';
 // STORE
 import store from './store';
 
-// COMPONENTS
-import App from './App';
+// ROUTER
+import Router from './router';
 
 //
 import * as serviceWorker from './utils/serviceWorker';
 
+// STYLES
+import './assets/css/index.css';
+import "./assets/scss/index.scss";
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+			<Router />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
